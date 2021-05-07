@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".Settings">
+
+    <ImageView
+        android:id="@+id/logout_button"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:clickable="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        app:srcCompat="@drawable/ic_logout" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="200dp"
+        android:src="@drawable/icon"
+        android:layout_marginBottom="40dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+
+
+    <Button
+        android:id="@+id/changePass"
+        android:layout_width="300dp"
+        android:layout_marginTop="30dp"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:textColor="@color/white"
+        android:padding="10dp"
+        android:shadowColor="@color/black"
+        android:shadowDx="-3"
+        android:shadowDy="-3"
+        android:shadowRadius="1"
+        android:textSize="20sp"
+        android:outlineProvider="bounds"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView3"
+        android:layout_centerInParent="true"
+        android:text="Change Password" />
+</RelativeLayout>

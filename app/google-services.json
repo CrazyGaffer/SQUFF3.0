@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "932526885075",
+    "project_id": "squff-78ece",
+    "storage_bucket": "squff-78ece.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:932526885075:android:5a4d6aced59ee596eeec26",
+        "android_client_info": {
+          "package_name": "com.example.squff2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "932526885075-2rvri60d8uv6sa18ab54f6rdkipn4id4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDUz6JyLI_4Bzd9T1kb-etHXaflQL6QPDQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "932526885075-2rvri60d8uv6sa18ab54f6rdkipn4id4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

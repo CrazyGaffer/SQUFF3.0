@@ -3,7 +3,7 @@
     package="com.example.squff2">
 
     <uses-permission android:name="android.permission.CAMERA" />
-    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.CALL_PHONE" />
 
     <application
         android:allowBackup="true"
@@ -12,9 +12,12 @@
         android:roundIcon="@drawable/icon"
         android:supportsRtl="true"
         android:theme="@style/Theme.SQUFF2">
-        <activity android:name=".Contacts"></activity>
+        <activity android:name=".Managers_Contacts"></activity>
+        <activity android:name=".Contacts" />
         <activity android:name=".Settings" />
-        <activity android:name=".WarehouseStorage" />
+        <activity
+            android:name=".WarehouseStorage"
+            android:parentActivityName=".Scanner" />
         <activity android:name=".Shipping" />
         <activity android:name=".Scanner" />
         <activity android:name=".Home" />

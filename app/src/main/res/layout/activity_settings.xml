@@ -30,6 +30,17 @@
         tools:srcCompat="@tools:sample/avatars" />
 
 
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView3"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="30dp"
+        android:text="Worker Username"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
 
     <Button
         android:id="@+id/changePass"

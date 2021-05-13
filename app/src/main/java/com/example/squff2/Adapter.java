@@ -10,6 +10,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
@@ -90,7 +91,6 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
                     if (getAdapterPosition() == 3){
                         Intent i = new Intent(v.getContext(), WarehouseStorage.class);
                         i.putExtra("title", data.get(getAdapterPosition()));
-                        Toasty.warning(v.getContext(), "Still in development!", Toasty.LENGTH_SHORT).show();
                         v.getContext().startActivity(i);
                     }
 
@@ -99,10 +99,10 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
                         i.putExtra("title", data.get(getAdapterPosition()));
                         v.getContext().startActivity(i);
 
+
                     }
 
                     if (getAdapterPosition() == 5) {
-                        Toasty.warning(v.getContext(), "Still in development!", Toasty.LENGTH_SHORT).show();
                         Intent i = new Intent(v.getContext(), Settings.class);
                         v.getContext().startActivity(i);
                     }

@@ -5,9 +5,12 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+
+import com.r0adkll.slidr.Slidr;
+
 import java.util.ArrayList;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity{
     private ArrayList<ExampleItem> mExampleList;
     private RecyclerView mRecyclerView;
     private ExampleAdapter mAdapter;
@@ -18,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Slidr.attach(this);
         createExampleList();
         buildRecyclerView();
     }
@@ -57,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
         mAdapter.setOnItemClickListener(new ExampleAdapter.OnItemClickListener() {
             @Override
             public void onItemClick(int position) {
-                changeItem(position, "Selected");
+                changeItem(position, "Clicked");
             }
             @Override
             public void onDeleteClick(int position) {

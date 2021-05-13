@@ -4,14 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-import com.r0adkll.slidr.Slidr;
-
-public class Shipping extends AppCompatActivity {
+public class Managers_Contacts extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_shipping);
-        Slidr.attach(this);
+        setContentView(R.layout.activity_managers_contacts);
     }
 }

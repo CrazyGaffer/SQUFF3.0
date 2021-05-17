@@ -19,26 +19,29 @@
         app:srcCompat="@drawable/ic_logout" />
 
     <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="160dp"
-        android:layout_height="160dp"
+        android:id="@+id/profile_pic"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
         android:layout_alignParentTop="true"
         android:layout_centerInParent="true"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="180dp"
         android:src="@drawable/icon"
+        android:clickable="true"
         android:layout_marginBottom="40dp"
         tools:srcCompat="@tools:sample/avatars" />
+
 
 
     <TextView
         android:id="@+id/username"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/imageView3"
+        android:layout_below="@+id/profile_pic"
         android:layout_centerInParent="true"
         android:layout_marginBottom="30dp"
         android:text="Worker Username"
-        android:textSize="25sp"
+        android:fontFamily="serif-monospace"
+        android:textSize="30sp"
         android:textAllCaps="true"
         android:textStyle="bold"
         android:textColor="@color/black"/>
@@ -46,19 +49,14 @@
     <Button
         android:id="@+id/changePass"
         android:layout_width="300dp"
-        android:layout_marginTop="30dp"
-        style="@style/Widget.AppCompat.Button.Borderless.Colored"
-        android:textColor="@color/white"
-        android:padding="10dp"
-        android:shadowColor="@color/black"
-        android:shadowDx="-3"
-        android:shadowDy="-3"
-        android:shadowRadius="1"
+        android:layout_marginTop="60dp"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:textColor="@color/black"
+        android:fontFamily="serif-monospace"
         android:textSize="20sp"
-        android:outlineProvider="bounds"
         android:textStyle="bold"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/imageView3"
+        android:layout_below="@+id/profile_pic"
         android:layout_centerInParent="true"
-        android:text="Change Password" />
+        android:text="Change Password"/>
 </RelativeLayout>

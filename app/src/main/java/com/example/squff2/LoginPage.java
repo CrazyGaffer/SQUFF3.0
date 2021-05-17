@@ -142,9 +142,9 @@ public class LoginPage extends AppCompatActivity {
                             public void run() {
                                 progressButton.buttonFailure();
                                 Toasty.warning(LoginPage.this, e.getMessage(), Toasty.LENGTH_LONG).show();
+
                             }
                         },3000);
-
                     }
                 });
 

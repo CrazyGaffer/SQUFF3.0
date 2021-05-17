@@ -12,7 +12,6 @@
         android:roundIcon="@drawable/icon"
         android:supportsRtl="true"
         android:theme="@style/Theme.SQUFF2">
-        <activity android:name=".Managers_Contacts"></activity>
         <activity android:name=".Contacts" />
         <activity android:name=".Settings" />
         <activity

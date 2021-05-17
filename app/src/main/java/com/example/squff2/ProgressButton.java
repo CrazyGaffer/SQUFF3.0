@@ -12,6 +12,10 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 
 import org.w3c.dom.Text;
 
+import java.util.logging.Handler;
+import java.util.logging.LogRecord;
+
+import static com.example.squff2.R.color.gray;
 import static com.example.squff2.R.color.green;
 import static com.example.squff2.R.color.red;
 
@@ -36,18 +40,18 @@ public class ProgressButton {
         progressBar.setAnimation(blink);
         progressBar.setVisibility(View.VISIBLE);
         textView.setAnimation(blink);
-        textView.setText("Please wait");
+        textView.setText("PLEASE WAIT");
     }
     void buttonFinished(){
         layout.setBackground(cardView.getResources().getDrawable(green));
         progressBar.setVisibility(View.GONE);
-        textView.setText("Success");
+        textView.setText("SUCCESS");
 
     }
 
     public void buttonFailure() {
         layout.setBackground(cardView.getResources().getDrawable(red));
         progressBar.setVisibility(View.GONE);
-        textView.setText("Error");
+        textView.setText("ERROR");
     }
 }

@@ -15,10 +15,10 @@
         app:showAsAction="ifRoom" />
 
     <item
-        android:id="@+id/action_nearby"
+        android:id="@+id/action_workers"
         android:enabled="true"
-        android:icon="@drawable/ic_delete"
-        android:title="NEARBY"
+        android:icon="@drawable/ic_person"
+        android:title="WORKERS"
         app:showAsAction="ifRoom" />
 
     <item

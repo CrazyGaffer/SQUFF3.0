@@ -10,7 +10,11 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentActivity;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
@@ -98,7 +102,6 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
                         Intent i = new Intent(v.getContext(), Contacts.class);
                         i.putExtra("title", data.get(getAdapterPosition()));
                         v.getContext().startActivity(i);
-
 
                     }
 

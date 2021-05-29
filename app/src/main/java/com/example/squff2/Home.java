@@ -32,12 +32,12 @@ public class Home extends AppCompatActivity {
 
 
         items = new ArrayList<>();
-        items.add("Receiving");
+        items.add("New Order");
         items.add("Shipping");
         items.add("Transfer");
         items.add("Warehouse Storage");
         items.add("Contacts");
-        items.add("Settings");
+        items.add("Profile");
 
         images = new ArrayList<>();
         images.add(R.drawable.ic_receive);
@@ -45,7 +45,7 @@ public class Home extends AppCompatActivity {
         images.add(R.drawable.ic_transfer);
         images.add(R.drawable.ic_storage);
         images.add(R.drawable.ic_baseline_phone_24);
-        images.add(R.drawable.ic_settings);
+        images.add(R.drawable.ic_person);
 
 
         recyclerView = findViewById(R.id.recyclerView);

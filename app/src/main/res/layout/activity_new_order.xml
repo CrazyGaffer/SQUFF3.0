@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".Settings">
+
+    <TextView
+        android:id="@+id/Title"
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        android:layout_height="wrap_content"
+        android:text="New Order"
+        android:textSize="40sp"
+        android:fontFamily="@font/sigmar"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"/>
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_marginTop="20dp"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Title"
+        android:layout_centerInParent="true"
+        android:background="#22000000"
+        android:spinnerMode="dialog"
+        android:textAlignment="center" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/spinner"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/switch1"
+        android:layout_below="@+id/spinner"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="10dp"
+        android:text="From"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/permanent"/>
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_below="@id/spinner"
+        android:layout_toRightOf="@+id/switch1"
+        android:layout_marginLeft="10dp"
+        android:text="To"
+        android:textSize="20sp"
+        android:fontFamily="@font/permanent"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/TitleOfClient"
+        android:layout_below="@+id/switch1"
+        android:layout_marginTop="15dp"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:fontFamily="@font/permanent"
+        android:hint="Title"
+        android:textColorHint="@color/black"
+        android:inputType="textPersonName"
+        android:editable="false"/>
+    <EditText
+        android:id="@+id/Description"
+        android:layout_below="@+id/TitleOfClient"
+        android:layout_marginTop="15dp"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:fontFamily="@font/permanent"
+        android:inputType="textPersonName"
+        android:hint="Description"
+        android:textColorHint="@color/black"
+        android:editable="false"/>
+    <EditText
+        android:id="@+id/Country"
+        android:layout_below="@+id/Description"
+        android:layout_marginTop="15dp"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Country"
+        android:fontFamily="@font/permanent"
+        android:textColorHint="@color/black"
+        android:editable="false"/>
+    <EditText
+        android:id="@+id/City"
+        android:layout_below="@+id/Country"
+        android:layout_marginTop="15dp"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="City"
+        android:fontFamily="@font/permanent"
+        android:textColorHint="@color/black"
+        android:editable="false"/>
+    <EditText
+        android:id="@+id/Address"
+        android:layout_below="@+id/City"
+        android:layout_marginTop="15dp"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Address"
+        android:fontFamily="@font/permanent"
+        android:textColorHint="@color/black"
+        android:editable="false"/>
+    <EditText
+        android:id="@+id/Email"
+        android:layout_below="@+id/Address"
+        android:layout_marginTop="15dp"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Email"
+        android:fontFamily="@font/permanent"
+        android:textColorHint="@color/black"
+        android:editable="false"/>
+    <EditText
+        android:id="@+id/PhoneNum"
+        android:layout_below="@+id/Email"
+        android:layout_marginTop="15dp"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Phone Number"
+        android:fontFamily="@font/permanent"
+        android:textColorHint="@color/black"
+        android:editable="false"/>
+
+    <Button
+        android:id="@+id/button_next"
+        android:layout_marginTop="35dp"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/PhoneNum"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/sigmar"
+        android:layout_height="wrap_content"
+        android:text="NEXT" />
+
+
+</RelativeLayout>
+
+

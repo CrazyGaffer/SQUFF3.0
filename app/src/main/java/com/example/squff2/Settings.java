@@ -1,7 +1,6 @@
 package com.example.squff2;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -31,7 +30,6 @@ import com.google.firebase.storage.UploadTask;
 import com.r0adkll.slidr.Slidr;
 import com.squareup.picasso.Picasso;
 
-import org.w3c.dom.Text;
 
 import es.dmoral.toasty.Toasty;
 

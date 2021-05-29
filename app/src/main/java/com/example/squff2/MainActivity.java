@@ -1,12 +1,19 @@
 package com.example.squff2;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+
+
+import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuItem;
 
-import com.r0adkll.slidr.Slidr;
+
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import java.util.ArrayList;
 
@@ -20,10 +27,37 @@ public class MainActivity extends AppCompatActivity{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_main);
-        Slidr.attach(this);
         createExampleList();
         buildRecyclerView();
+
+
+        BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation1);
+        bottomNavigationView.setSelectedItemId(R.id.AllOrders);
+        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                switch (item.getItemId()){
+                    case R.id.OpenedOrders:
+                        startActivity(new Intent(getApplicationContext(),OpenedOrders.class));
+                        overridePendingTransition(0,0);
+                        return true;
+
+                    case R.id.AllOrders:
+                        return true;
+
+                    case R.id.ClosedOrders:
+                        startActivity(new Intent(getApplicationContext(),ClosedOrders.class));
+                        overridePendingTransition(0,0);
+                        return true;
+
+                }
+                return false;
+            }
+        });
+
+
     }
 
     public void removeItem(int position) {
@@ -51,6 +85,8 @@ public class MainActivity extends AppCompatActivity{
 
 
     }
+
+
     public void buildRecyclerView() {
         mRecyclerView = findViewById(R.id.recyclerView);
         mRecyclerView.setHasFixedSize(true);

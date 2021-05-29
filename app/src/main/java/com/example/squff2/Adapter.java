@@ -76,7 +76,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
                 public void onClick(View v) {
 
                     if (getAdapterPosition() == 0){
-                        Intent i = new Intent(v.getContext(),MainActivity.class);
+                        Intent i = new Intent(v.getContext(),NewOrder.class);
                         i.putExtra("title",data.get(getAdapterPosition()));
                         i.putExtra("image", images.get(getAdapterPosition()));
                         v.getContext().startActivity(i);

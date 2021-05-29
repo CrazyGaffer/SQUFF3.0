@@ -12,6 +12,9 @@
         android:roundIcon="@drawable/icon"
         android:supportsRtl="true"
         android:theme="@style/Theme.SQUFF2">
+        <activity android:name=".ClosedOrders"></activity>
+        <activity android:name=".OpenedOrders" />
+        <activity android:name=".NewOrder" />
         <activity android:name=".Contacts" />
         <activity android:name=".Settings" />
         <activity
